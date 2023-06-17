@@ -77,3 +77,48 @@ items.forEach(item => item.addEventListener('click', toggleAccordion));
 // // Fetch articles and guides
 // fetchArticles();
 // fetchGuides();
+
+// BMI
+
+// select the calculate button
+let calculate = document.querySelector('.calculate');
+
+// attach event listener to the button
+calculate.addEventListener('click', findBMI);
+
+// function to find the BMI
+function findBMI() {
+let height = +document.querySelector('#height').value;
+let weight = +document.querySelector('#weight').value;
+// check height & weight are a valid number
+if (height <= 0 || weight <= 0 || isNaN(height) || isNaN(weight)) {
+    alert('Please fill all fields with valid numbers');
+    return;
+  }
+// convert height to meters
+  height = height / 100;
+  let bmi = weight / (height * height);
+  showResult(bmi);
+    }
+
+// function to show the result
+function showResult(bmi) {
+  let result = document.querySelector('.result');
+  let bmiStatus;
+  if (bmi < 18.5) {
+    bmiStatus = 'Underweight';
+  } else if (bmi < 25) {
+    bmiStatus = 'Normal';
+  } else if (bmi < 30) {
+    bmiStatus = 'Overweight';
+  } else {
+    bmiStatus = 'Obese';
+  }
+    result.innerHTML = `<div class=${bmiStatus}>Your BMI is ${bmi.toFixed(2)} and you are ${bmiStatus}.</div>`;
+  }
+
+
+  // Body Fat 
+
+  // Calorie Intake
+ 
