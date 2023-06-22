@@ -27,6 +27,47 @@
             </div>
         </div>
     </div>
+    <div class="body-fat">
+        <div class="containers">
+            <h1>Body Fat Percentage Calculator</h1>
+
+        <h2>For Males</h2>
+        <div class="input">
+            <label>Height (in cm): <input type="number" id="maleHeight"></label><br>
+        </div>
+        <div class="input">
+            <label>Weight (in kg): <input type="number" id="maleWeight"></label><br>
+        </div>
+        <div class="input">
+            <label>Waist Circumference (in cm): <input type="number" id="maleWaist"></label><br>
+        </div>
+        <div class="input">
+            <label>Neck Circumference (in cm): <input type="number" id="maleNeck"></label><br>
+        </div>
+        <button onclick="calculateMaleBodyFat()" class="calculate">Calculate</button>
+        <p id="maleResult"></p>
+
+        <h2>For Females</h2>
+        <div class="input">
+            <label>Height (in cm): <input type="number" id="femaleHeight"></label><br>
+        </div>
+        <div class="input">
+            <label>Weight (in kg): <input type="number" id="femaleWeight"></label><br>
+
+        </div>
+        <div class="input">
+            <label>Waist Circumference (in cm): <input type="number" id="femaleWaist"></label><br>
+        </div>
+        <div class="input">
+            <label>Neck Circumference (in cm): <input type="number" id="femaleNeck"></label><br>
+        </div>
+        <div class="inp">
+            <label>Hip Circumference (in cm): <input type="number" id="femaleHip"></label><br>
+        </div>
+        <button onclick="calculateFemaleBodyFat()" class="calculate">Calculate</button>
+        <p id="femaleResult"></p>
+    </div>
+        </div>
     <footer>
         Copyright &copy; Fit at Home Guidance | Powered by Fit at Home Guidance
     </footer>

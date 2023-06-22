@@ -503,10 +503,6 @@ footer {
     border-radius:10px;
   }
 
-  /* .accordion .accordion-item button[aria-expanded=true] {
-    border-bottom: 1px solid #03b5d2;
-  } */
-
   .accordion h2 {
     position: relative;
     display: block;
@@ -662,4 +658,24 @@ h1 {
 
 /* Body fat  */
 
+.body-fat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Calorie Intake  */
+
+.calorie-intake {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.calorie-intake select {
+  border: none;
+  outline: none;
+}
